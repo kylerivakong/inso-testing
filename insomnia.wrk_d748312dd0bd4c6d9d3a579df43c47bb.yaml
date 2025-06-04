@@ -52,6 +52,23 @@ collection:
         pathParameters:
           - name: endpoint
             value: anything
+      - url: http://httpbin.org/anything
+        name: Another Request
+        meta:
+          id: req_483f0e8b67e94c3c8c0df26422fdded7
+          created: 1749045255883
+          modified: 1749045366885
+          isPrivate: false
+          sortKey: -1749043084995
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
