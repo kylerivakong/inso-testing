@@ -4,6 +4,7 @@ meta:
   id: wrk_d748312dd0bd4c6d9d3a579df43c47bb
   created: 1749043497513
   modified: 1749043497513
+  description: ""
 collection:
   - name: Requests
     meta:
@@ -11,6 +12,7 @@ collection:
       created: 1749043497518
       modified: 1749043497518
       sortKey: -1749043077355
+      description: ""
     children:
       - url: https://httpbin.konghq.com/:endpoint
         name: httpbin.konghq
@@ -19,8 +21,12 @@ collection:
           created: 1749043497519
           modified: 1749043497519
           isPrivate: false
+          description: ""
           sortKey: -1749043085195
         method: GET
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -39,8 +45,12 @@ collection:
           created: 1749043497520
           modified: 1749043497520
           isPrivate: false
+          description: ""
           sortKey: -1749043085095
         method: GET
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -59,6 +69,7 @@ collection:
           created: 1749045255883
           modified: 1749045366885
           isPrivate: false
+          description: ""
           sortKey: -1749043084995
         method: GET
         settings:
@@ -69,6 +80,9 @@ collection:
             send: true
             store: true
           rebuildPath: true
+    scripts:
+      afterResponse: ""
+      preRequest: ""
 cookieJar:
   name: Default Jar
   meta:
