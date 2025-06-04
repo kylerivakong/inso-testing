@@ -1,0 +1,67 @@
+type: collection.insomnia.rest/5.0
+name: Git Sync Testing
+meta:
+  id: wrk_d748312dd0bd4c6d9d3a579df43c47bb
+  created: 1749043497513
+  modified: 1749043497513
+collection:
+  - name: Requests
+    meta:
+      id: fld_7786580a4b9e499faa2a58eed0eda502
+      created: 1749043497518
+      modified: 1749043497518
+      sortKey: -1749043077355
+    children:
+      - url: https://httpbin.konghq.com/:endpoint
+        name: httpbin.konghq
+        meta:
+          id: req_a8947f4917ac4915930f10c90aad869e
+          created: 1749043497519
+          modified: 1749043497519
+          isPrivate: false
+          sortKey: -1749043085195
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: endpoint
+            value: anything
+      - url: http://httpbin.org/:endpoint
+        name: httpbin.org
+        meta:
+          id: req_59747d3a0e4f4bcca8c38190f0c106bf
+          created: 1749043497520
+          modified: 1749043497520
+          isPrivate: false
+          sortKey: -1749043085095
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: endpoint
+            value: anything
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_39bbe15583da47c7a1c585b29f2995e8
+    created: 1749043497516
+    modified: 1749043497516
+environments:
+  name: Base Environment
+  meta:
+    id: env_4f2bcf1dd775484d9a62e957b770acba
+    created: 1749043497515
+    modified: 1749043497515
+    isPrivate: false
