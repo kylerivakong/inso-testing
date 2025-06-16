@@ -83,6 +83,100 @@ collection:
     scripts:
       afterResponse: ""
       preRequest: ""
+  - name: Kong Proxy
+    meta:
+      id: fld_e606290f694e479bab25370cd2855ef9
+      created: 1750080500760
+      modified: 1750080500760
+      sortKey: -1750080500760
+      description: ""
+    children:
+      - url: http://localhost:9001/services
+        name: Create httpbin service
+        meta:
+          id: req_e275bd1fbc6b4620a41e87b99f0ac529
+          created: 1750080505482
+          modified: 1750080634992
+          isPrivate: false
+          description: ""
+          sortKey: -1750080505482
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_1e5e9de8d80d438aa5f6b0d8e2ae17c3
+              name: name
+              value: httpbin
+              description: ""
+              disabled: false
+            - id: pair_2cdad04b7f3045ce87c3cfa3fa178a94
+              name: url
+              value: https://httpbin.konghq.com
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:9001/services/httpbin/routes
+        name: Create httpbin route
+        meta:
+          id: req_e468b588c86d46e4920ff251140f8a94
+          created: 1750080654175
+          modified: 1750080775668
+          isPrivate: false
+          description: ""
+          sortKey: -1750080505382
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_18b71ec016dc48e1863073c4d55d8a3e
+              name: name
+              value: httpbin-route
+              description: ""
+              disabled: false
+            - id: pair_1c8576f784864ae293f9c81e9c7f0739
+              name: paths
+              value: /httpbin
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:9000/httpbin
+        name: httpbin proxy request
+        meta:
+          id: req_cca38fb92bb74f71b545f9f5ad4c90ae
+          created: 1750080777250
+          modified: 1750080810820
+          isPrivate: false
+          description: ""
+          sortKey: -1750080505282
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
