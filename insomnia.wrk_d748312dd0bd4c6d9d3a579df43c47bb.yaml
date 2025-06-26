@@ -15,11 +15,11 @@ collection:
       description: ""
     children:
       - url: https://httpbin.konghq.com/:endpoint
-        name: httpbin.konghq
+        name: Direct to httpbin.konghq
         meta:
           id: req_a8947f4917ac4915930f10c90aad869e
           created: 1749043497519
-          modified: 1749043497519
+          modified: 1750959463334
           isPrivate: false
           description: ""
           sortKey: -1749043085195
@@ -39,11 +39,11 @@ collection:
           - name: endpoint
             value: anything
       - url: http://httpbin.org/:endpoint
-        name: httpbin.org
+        name: Direct to httpbin.org
         meta:
           id: req_59747d3a0e4f4bcca8c38190f0c106bf
           created: 1749043497520
-          modified: 1749043497520
+          modified: 1750959472022
           isPrivate: false
           description: ""
           sortKey: -1749043085095
@@ -62,24 +62,6 @@ collection:
         pathParameters:
           - name: endpoint
             value: anything
-      - url: http://httpbin.org/anything
-        name: Another Request
-        meta:
-          id: req_483f0e8b67e94c3c8c0df26422fdded7
-          created: 1749045255883
-          modified: 1749045366885
-          isPrivate: false
-          description: ""
-          sortKey: -1749043084995
-        method: GET
-        settings:
-          renderRequestBody: true
-          encodeUrl: true
-          followRedirects: global
-          cookies:
-            send: true
-            store: true
-          rebuildPath: true
     scripts:
       afterResponse: ""
       preRequest: ""
