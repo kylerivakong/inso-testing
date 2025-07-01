@@ -73,12 +73,12 @@ collection:
       sortKey: -1750080500760
       description: ""
     children:
-      - url: http://localhost:9001/services
+      - url: http://localhost:8001/services
         name: Create httpbin service
         meta:
           id: req_e275bd1fbc6b4620a41e87b99f0ac529
           created: 1750080505482
-          modified: 1750080634992
+          modified: 1751381904503
           isPrivate: false
           description: ""
           sortKey: -1750080505482
@@ -107,12 +107,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:9001/services/httpbin/routes
+      - url: http://localhost:8001/services/httpbin/routes
         name: Create httpbin route
         meta:
           id: req_e468b588c86d46e4920ff251140f8a94
           created: 1750080654175
-          modified: 1750080775668
+          modified: 1751381909662
           isPrivate: false
           description: ""
           sortKey: -1750080505382
@@ -141,16 +141,55 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:9000/httpbin
+      - url: http://localhost:8000/httpbin/anything
         name: httpbin proxy request
         meta:
           id: req_cca38fb92bb74f71b545f9f5ad4c90ae
           created: 1750080777250
-          modified: 1750080810820
+          modified: 1751381966456
           isPrivate: false
           description: ""
           sortKey: -1750080505282
         method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/httpbin/post
+        name: httpbin proxy request
+        meta:
+          id: req_4bd06971d5ec4a2980cda494b1879975
+          created: 1751381953450
+          modified: 1751382036321
+          isPrivate: false
+          description: ""
+          sortKey: -1749561795238.5
+        method: POST
+        body:
+          mimeType: text/plain
+          text: |-
+            sdasdsadsadsadsadsad
+            sadsadasdsad
+            sad
+            sad
+            sa
+            dsadsadsadsadas
+            dsa
+            dsa
+            d
+            sadas
+        headers:
+          - name: Content-Type
+            value: text/plain
+          - id: pair_126e21134a8b4427976caae61409618d
+            name: expect
+            value: 100-continue
+            description: ""
+            disabled: false
         settings:
           renderRequestBody: true
           encodeUrl: true
