@@ -86,19 +86,22 @@ collection:
         body:
           mimeType: multipart/form-data
           params:
-            - id: pair_1e5e9de8d80d438aa5f6b0d8e2ae17c3
-              name: name
+            - name: name
               value: httpbinkonghq
               description: ""
               disabled: false
-            - id: pair_2cdad04b7f3045ce87c3cfa3fa178a94
-              name: url
+              id: pair_1e5e9de8d80d438aa5f6b0d8e2ae17c3
+            - name: url
               value: https://httpbin.konghq.com
               description: ""
               disabled: false
+              id: pair_2cdad04b7f3045ce87c3cfa3fa178a94
         headers:
           - name: Content-Type
             value: multipart/form-data
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -120,19 +123,22 @@ collection:
         body:
           mimeType: multipart/form-data
           params:
-            - id: pair_18b71ec016dc48e1863073c4d55d8a3e
-              name: name
+            - name: name
               value: httpbinkonghq-route
               description: ""
               disabled: false
-            - id: pair_1c8576f784864ae293f9c81e9c7f0739
-              name: paths
+              id: pair_18b71ec016dc48e1863073c4d55d8a3e
+            - name: paths
               value: /httpbinkonghq
               description: ""
               disabled: false
+              id: pair_1c8576f784864ae293f9c81e9c7f0739
         headers:
           - name: Content-Type
             value: multipart/form-data
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -157,17 +163,13 @@ collection:
         headers:
           - name: Content-Type
             value: text/plain
-            id: pair_6f8956d2d819487c9fed0f8ac5a020fe
-          - id: pair_99b6c9b4340c43b29c0ae6fd05ead3f1
-            name: Expect
+          - name: Expect
             value: 100-continue
-            description: ""
-            disabled: false
-          - id: pair_b4e9e99eda964673b9bf5c6778713163
-            name: Fake
+          - name: Fake
             value: Header
-            description: ""
-            disabled: true
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -192,17 +194,10 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_f473652e884b49cb8e219454f157b062
-          - id: pair_1ee95cb43fba43bfba50dc36d94054bf
-            name: Header1
+          - name: Header1
             value: Value1
-            description: ""
-            disabled: false
-          - id: pair_a500a16ee71649d78a610f7204d046ee
-            name: Header2
+          - name: Header2
             value: Value2
-            description: ""
-            disabled: false
         scripts:
           preRequest: ""
           afterResponse: ""
@@ -227,19 +222,22 @@ collection:
         body:
           mimeType: multipart/form-data
           params:
-            - id: pair_1e5e9de8d80d438aa5f6b0d8e2ae17c3
-              name: name
+            - name: name
               value: httpbin
               description: ""
               disabled: false
-            - id: pair_2cdad04b7f3045ce87c3cfa3fa178a94
-              name: url
+              id: pair_1e5e9de8d80d438aa5f6b0d8e2ae17c3
+            - name: url
               value: https://httpbin.org
               description: ""
               disabled: false
+              id: pair_2cdad04b7f3045ce87c3cfa3fa178a94
         headers:
           - name: Content-Type
             value: multipart/form-data
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -261,19 +259,22 @@ collection:
         body:
           mimeType: multipart/form-data
           params:
-            - id: pair_18b71ec016dc48e1863073c4d55d8a3e
-              name: name
+            - name: name
               value: httpbin-route
               description: ""
               disabled: false
-            - id: pair_1c8576f784864ae293f9c81e9c7f0739
-              name: paths[]
+              id: pair_18b71ec016dc48e1863073c4d55d8a3e
+            - name: paths[]
               value: /httpbin
               description: ""
               disabled: false
+              id: pair_1c8576f784864ae293f9c81e9c7f0739
         headers:
           - name: Content-Type
             value: multipart/form-data
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -317,13 +318,11 @@ collection:
           mimeType: application/json
           text: '{"body":"data"}'
         headers:
-          - id: pair_76b7da1d169c4b5aaa33aaa8e97c08ee
-            name: Content-Type
+          - name: Content-Type
             value: application/json
-            description: ""
-            disabled: false
         scripts:
           preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -333,6 +332,7 @@ collection:
             store: true
           rebuildPath: true
     scripts:
+      afterResponse: ""
       preRequest: >-
         // utils
 
