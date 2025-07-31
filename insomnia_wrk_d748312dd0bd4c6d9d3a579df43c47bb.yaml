@@ -304,33 +304,6 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:8000/lua
-        name: New Request
-        meta:
-          id: req_5b8baaa2f08b43c2938d81a369ae1afe
-          created: 1751638636787
-          modified: 1753379758482
-          isPrivate: false
-          description: ""
-          sortKey: -1749691472649.375
-        method: POST
-        body:
-          mimeType: application/json
-          text: '{"body":"data"}'
-        headers:
-          - name: Content-Type
-            value: application/json
-        scripts:
-          preRequest: ""
-          afterResponse: ""
-        settings:
-          renderRequestBody: true
-          encodeUrl: true
-          followRedirects: global
-          cookies:
-            send: true
-            store: true
-          rebuildPath: true
     scripts:
       afterResponse: ""
       preRequest: >-
