@@ -314,6 +314,9 @@ collection:
           description: ""
           sortKey: -1749691472649.375
         method: GET
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
