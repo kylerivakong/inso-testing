@@ -24,9 +24,6 @@ collection:
           description: ""
           sortKey: -1749043085195
         method: GET
-        scripts:
-          preRequest: ""
-          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -48,9 +45,6 @@ collection:
           description: ""
           sortKey: -1749043085095
         method: GET
-        scripts:
-          preRequest: ""
-          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -62,9 +56,6 @@ collection:
         pathParameters:
           - name: endpoint
             value: anything
-    scripts:
-      afterResponse: ""
-      preRequest: ""
   - name: Kong Proxy
     meta:
       id: fld_e606290f694e479bab25370cd2855ef9
@@ -99,9 +90,6 @@ collection:
         headers:
           - name: Content-Type
             value: multipart/form-data
-        scripts:
-          preRequest: ""
-          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -136,9 +124,6 @@ collection:
         headers:
           - name: Content-Type
             value: multipart/form-data
-        scripts:
-          preRequest: ""
-          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -167,9 +152,6 @@ collection:
             value: 100-continue
           - name: Fake
             value: Header
-        scripts:
-          preRequest: ""
-          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -198,9 +180,6 @@ collection:
             value: Value1
           - name: Header2
             value: Value2
-        scripts:
-          preRequest: ""
-          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -235,9 +214,6 @@ collection:
         headers:
           - name: Content-Type
             value: multipart/form-data
-        scripts:
-          preRequest: ""
-          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -272,9 +248,6 @@ collection:
         headers:
           - name: Content-Type
             value: multipart/form-data
-        scripts:
-          preRequest: ""
-          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -295,7 +268,6 @@ collection:
         method: GET
         scripts:
           preRequest: console.log(insomnia.environment.get("requestID"));
-          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -314,9 +286,6 @@ collection:
           description: ""
           sortKey: -1749691472649.375
         method: GET
-        scripts:
-          preRequest: ""
-          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -326,7 +295,6 @@ collection:
             store: true
           rebuildPath: true
     scripts:
-      afterResponse: ""
       preRequest: >-
         // utils
 
