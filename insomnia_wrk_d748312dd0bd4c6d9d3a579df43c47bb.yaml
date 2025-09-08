@@ -400,13 +400,3 @@ environments:
   data:
     serviceID: bafeb1f6-3235-4ef0-827b-b25fcc000b09
     requestID: 86ccc91a-280e-4f19-8d5e-7e6e4adbfc6a
-  subEnvironments:
-    - name: Test Env
-      meta:
-        id: env_267adddd1b57442897ab8d889f118c9a
-        created: 1754057635606
-        modified: 1754057694933
-        isPrivate: false
-        sortKey: 1754057635606
-      data:
-        test: value
