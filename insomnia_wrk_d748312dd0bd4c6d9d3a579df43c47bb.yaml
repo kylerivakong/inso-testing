@@ -318,7 +318,7 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: ""
+      - url: "http://something.com:67890/other"
         name: Commit Test
         meta:
           id: req_db4eac4f27344dd8988a349f873d23a0
