@@ -303,11 +303,8 @@ collection:
           sortKey: -1749821150260.25
         method: GET
         headers:
-          - id: pair_a493401181534d20961237a0bc3f29d2
-            name: apikey
+          - name: apikey
             value: asdsadad
-            description: ""
-            disabled: false
         scripts:
           preRequest: console.log(insomnia.environment.get("requestID"));
         settings:
