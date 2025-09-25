@@ -6,6 +6,42 @@ meta:
   modified: 1752095223706
   description: ""
 collection:
+  - url: http://localhost:80/ai
+    name: AI-Testing
+    meta:
+      id: req_8cf86e8511cd43bfac454d28f50c1922
+      created: 1758641409252
+      modified: 1758832134051
+      isPrivate: false
+      description: ""
+      sortKey: -1758641409252
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "messages": [
+                {
+                    "role": "system",
+                    "content": "You are a chill dude"
+                },
+                {
+                    "role": "user",
+                    "content": "All IT support questions"
+                }
+            ]
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
   - name: Requests
     meta:
       id: fld_7786580a4b9e499faa2a58eed0eda502
@@ -60,16 +96,16 @@ collection:
     meta:
       id: fld_e606290f694e479bab25370cd2855ef9
       created: 1750080500760
-      modified: 1753996016557
+      modified: 1758654005764
       sortKey: -1750080500760
       description: ""
     children:
-      - url: http://localhost:9001/services
+      - url: http://localhost:8001/services
         name: Create httpbin.konghq service
         meta:
           id: req_e275bd1fbc6b4620a41e87b99f0ac529
           created: 1750080505482
-          modified: 1751634170366
+          modified: 1758566405300
           isPrivate: false
           description: ""
           sortKey: -1750080505482
@@ -256,16 +292,22 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:9000/httpbin/uuid
+      - url: http://localhost:80/httpbin/uuid
         name: httpbin proxy request
         meta:
           id: req_32caf3283330478084cfe2ea7eb33967
           created: 1751386481014
-          modified: 1753111935384
+          modified: 1758653959224
           isPrivate: false
           description: ""
           sortKey: -1749821150260.25
         method: GET
+        headers:
+          - id: pair_a493401181534d20961237a0bc3f29d2
+            name: apikey
+            value: asdsadad
+            description: ""
+            disabled: false
         scripts:
           preRequest: console.log(insomnia.environment.get("requestID"));
         settings:
@@ -357,13 +399,13 @@ cookieJar:
   meta:
     id: jar_39bbe15583da47c7a1c585b29f2995e8
     created: 1749043497516
-    modified: 1753996016555
+    modified: 1758654005737
 environments:
   name: Base Environment
   meta:
     id: env_4f2bcf1dd775484d9a62e957b770acba
     created: 1749043497515
-    modified: 1753996016556
+    modified: 1758654005756
     isPrivate: false
   data:
     serviceID: bafeb1f6-3235-4ef0-827b-b25fcc000b09
